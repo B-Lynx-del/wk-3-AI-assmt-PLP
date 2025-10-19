@@ -1,8 +1,7 @@
 # 🧠 AI Tools Assignment
 
 > **Theme:** Mastering the AI Toolkit  
-> **Group Members:** [Add your names]  
-> **Date:** [Add date]
+> 
 
 ---
 
