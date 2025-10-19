@@ -1,0 +1,103 @@
+Part 1: Theoretical Understanding (Simplified)
+Q1: What’s the Difference Between TensorFlow and PyTorch?
+Feature	TensorFlow	PyTorch
+How it runs	Plans everything before running (static graph)	Builds as it runs (dynamic graph)
+Ease of use	More complex, but improving	Feels like regular Python, easier to learn
+Debugging	Harder to fix errors (used to be worse)	Easy to debug with normal Python tools
+Deployment	Great for putting models into apps/websites	Getting better, but not as strong yet
+Use TensorFlow if you want to:
+
+Put models into real-world apps (like mobile or web)
+
+Work with Google tools
+
+Need strong support for production
+
+Use PyTorch if you want to:
+
+Try out ideas quickly
+
+Do research or build custom models
+
+Debug easily and work in academic settings
+
+Q2: What’s Jupyter Notebook Good For?
+🧪 Use Case 1: Exploring Data
+
+You can see charts and graphs right below your code
+
+Try things out step-by-step
+
+Add notes and explanations
+
+Great for sharing insights with others
+
+📐 Use Case 2: Building and Testing Models
+
+Build models piece by piece
+
+Change settings and see results fast
+
+Compare different models easily
+
+Share everything in one neat file
+
+Q3: Why Use spaCy Instead of Just Python Strings?
+Task	Basic Python	spaCy
+Understands language	No	Yes — knows grammar and meaning
+Finds entities (names, places)	No — needs manual rules	Yes — built-in smart models
+Speed	Slower	Super fast (written in Cython)
+Pipeline	You build it manually	Comes ready with smart steps
+Example:
+
+python
+# Basic Python
+text = "Apple Inc. was founded by Steve Jobs"
+text.split() → ['Apple', 'Inc.', 'was', ...]
+
+# spaCy
+doc = nlp(text)
+→ [('Apple Inc.', 'ORG'), ('Steve Jobs', 'PERSON')]
+spaCy knows “Apple Inc.” is a company, not a fruit — Python doesn’t.
+
+🔍 Scikit-learn vs TensorFlow (Simplified)
+What They’re Good At
+Tool	Best For	Data Size	Examples
+Scikit-learn	Classic ML (like decision trees, SVM)	Small to medium	Spam filters, house prices
+TensorFlow	Deep learning (like neural networks)	Big data	Face recognition, language translation
+Scikit-learn = great for structured data (tables, spreadsheets) TensorFlow = great for unstructured data (images, text, audio)
+
+Which Is Easier to Learn?
+Tool	Ease	Why
+Scikit-learn	⭐⭐⭐⭐⭐	Simple code, easy to understand
+TensorFlow	⭐⭐⭐☆☆	More concepts to learn, but Keras helps
+Scikit-learn Example:
+
+python
+model.fit(X_train, y_train)
+model.predict(X_test)
+TensorFlow Example:
+
+python
+model = Sequential([...])
+model.compile(...)
+model.fit(...)
+TensorFlow needs more setup, but it’s powerful once you get the hang of it.
+
+Community Support
+Tool	Community Size	Highlights
+Scikit-learn	Big	Easy tutorials, strong academic support
+TensorFlow	Huge	Backed by Google, tons of resources
+Both have great communities — Scikit-learn is more beginner-friendly, TensorFlow is more advanced and research-focused.
+
+🧾 Summary Table
+Feature	Scikit-learn	TensorFlow
+Main Use	Classic ML	Deep Learning
+Easy to Learn	Yes	Takes time
+Code Simplicity	Simple	More setup
+Data Needs	Small-Medium	Big
+Training Speed	Fast	Slower (GPU helps)
+Deployment	Easy	Powerful but complex
+Community	Big	Huge
+Beginner Friendly	✅	⚠️
+Flexible	Less	Very
